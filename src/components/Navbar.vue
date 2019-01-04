@@ -1,7 +1,7 @@
 <template>
   <nav class="custom-navbar">
     <!-- flat removes drop shadow and makes opaque -->
-    <v-toolbar clipped-left="false" height="100" flat app>
+    <v-toolbar height="100" flat app>
       <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="grey--text text--darken-4">
         <span class="text-uppercase font-weight-bold mr-2">Nick Allen</span>
@@ -26,7 +26,7 @@
     </v-toolbar>
 
     <!-- navigation draw -->
-    <v-navigation-drawer v-model="drawer" app class="grey darken-3">
+    <v-navigation-drawer v-model="drawer" app class="blue-grey darken-4 left-nav-drawer">
       <p>test</p>
     </v-navigation-drawer>
   </nav>
@@ -36,11 +36,13 @@
 export default {
   data() {
     return {
-      drawer: true
+      drawer: false
     };
   }
 };
 </script>
+
+
 
 
 
