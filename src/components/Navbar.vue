@@ -5,11 +5,11 @@
       <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="grey--text text--darken-4">
         <span class="text-uppercase font-weight-bold mr-2">Nick Allen</span>
-        <span class="font-weight-light hidden-sm-and-down">- Software Portfolio</span>
+        <span class="font-weight-light">- Software Portfolio</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <div class="social-buttons hidden-xs-and-down">
+      <div class="social-buttons hidden-sm-and-down">
         <v-btn small fab class="grey white--text">
           <v-icon>blur_on</v-icon>
         </v-btn>
