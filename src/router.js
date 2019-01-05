@@ -1,8 +1,15 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
-import About from "./views/Bio.vue";
-import CV from "./views/CV.vue";
+// view imports
+import Profile from "./views/Profile.vue";
+import Cv from "./views/CV.vue";
+
+//uni project view imports
+import ThreeD from "./views/uni-projects/3dgraphics.vue";
+import Fyp from "./views/uni-projects/fyp.vue";
+import Oo from "./views/uni-projects/oo.vue";
+import Sem from "./views/uni-projects/sem.vue";
+import Webapp from "./views/uni-projects/webapp.vue";
 
 Vue.use(Router);
 
@@ -13,17 +20,37 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
-    },
-    {
-      path: "/bio",
-      name: "bio",
-      component: About
+      component: Profile
     },
     {
       path: "/cv",
       name: "cv",
-      component: CV
+      component: Cv
+    },
+    {
+      path: "/3dgraphics",
+      name: "3dgraphics",
+      component: ThreeD
+    },
+    {
+      path: "/fyp",
+      name: "fyp",
+      component: Fyp
+    },
+    {
+      path: "/oo",
+      name: "oo",
+      component: Oo
+    },
+    {
+      path: "/sem",
+      name: "sem",
+      component: Sem
+    },
+    {
+      path: "/webapp",
+      name: "webapp",
+      component: Webapp
     }
   ]
 });

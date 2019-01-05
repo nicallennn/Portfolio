@@ -1,7 +1,7 @@
 <template>
   <nav class="custom-navbar">
     <!-- flat removes drop shadow and makes opaque -->
-    <v-toolbar height="90" app>
+    <v-toolbar height="90" flat class="elevation-1" app>
       <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="grey--text text--darken-4">
         <span class="text-uppercase font-weight-bold mr-2">Nick Allen</span>
@@ -11,13 +11,13 @@
 
       <!-- social buttons -->
       <div class="social-buttons">
-        <v-btn small fab class="grey white--text hidden-sm-and-down">
+        <v-btn small fab class="grey white--text hidden-xs-only">
           <v-icon>blur_on</v-icon>
         </v-btn>
-        <v-btn small fab class="grey darken-3 white--text hidden-sm-and-down">
+        <v-btn small fab class="grey darken-3 white--text hidden-xs-only">
           <v-icon>music_note</v-icon>
         </v-btn>
-        <v-btn small fab class="grey white--text hidden-sm-and-down">
+        <v-btn small fab class="grey white--text">
           <v-icon>filter_vintage</v-icon>
         </v-btn>
         <v-btn small fab class="grey darken-3 white--text">
@@ -62,7 +62,7 @@ export default {
     return {
       drawer: true,
       mainLinks: [
-        { icon: "perm_identity", text: "Bio", route: "/bio" },
+        { icon: "perm_identity", text: "Profile", route: "/" },
         { icon: "file_copy", text: "CV", route: "/cv" }
       ],
       projectLinks: [

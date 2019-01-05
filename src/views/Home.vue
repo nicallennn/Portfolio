@@ -1,12 +1,7 @@
 <template>
-  <div class="home">
-    <h1>Home Page</h1>
+  <div class="about ma-5">
+    <h1>Bio Page</h1>
   </div>
 </template>
 
-<script>
-export default {
-  components: {}
-};
-</script>
 
