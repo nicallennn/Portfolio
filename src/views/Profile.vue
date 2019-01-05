@@ -76,15 +76,15 @@ export default {
       keyskills: [
         {
           text:
-            "Excellent communication, time management, team working, and problem solving skills, backed by several years producing and managing live events such as conferences and festivals."
+            "Excellent communication, time management, team working, and problem solving skills."
         },
         {
           text:
-            "Strong understanding and academic experience programming in both low and high-level languages such as C, Java, C#, JS, ASM, VHDL, Solidity."
+            "Strong understanding and academic experience programming in languages such as C, Java, C#, JS, Solidity."
         },
         {
           text:
-            "Full-Stack development of Web Applications using LAMP stack. More recently I have been studying JS technologies such as Node, Vue, and React."
+            "Full-Stack development of Web Applications using LAMP/MEVM stack."
         },
         { text: "Working knowledge of Git/Github." },
         {
@@ -93,7 +93,7 @@ export default {
         },
         {
           text:
-            "Knowledgeable of blockchain technologies, with focus on Ethereum. Experience programming/deploying smart contracts, and interacting with the contracts from a web-app frontend using the web3.js library."
+            "Knowledgeable of blockchain technologies, with focus on Ethereum."
         }
       ]
     };

@@ -1,13 +1,13 @@
 <template>
   <div class="education">
-    <!-- education -->
+    <!-- education and work history -->
     <div class="education_section white pa-5">
-      <h1>Education</h1>
+      <h1>Education and Work History</h1>
       <h3
         class="grey--text text--darken-2"
-      >I have a mixed education and haved studied a variety of topics, generally focused around engineering industries. Over the years I have obtained a number of qualifications, most notably those listed in the section below.</h3>
+      >I have studied and worked in various areas of engineering. Below you will find a list of obtained qualifications and work history.</h3>
     </div>
-
+    <!-- qualifications -->
     <div class="pa-5 grey lighten-4">
       <h2>Qualifications</h2>
       <v-list class="grey lighten-4">
@@ -17,9 +17,11 @@
           </v-list-tile-action>
           <v-list-title-content>
             <v-list-tile-tile>
-              {{qualification.school}} -
-              <strong>{{qualification.date}}</strong>
-              -
+              <span class="hidden-xs-only">
+                {{qualification.school}} -
+                <strong>{{qualification.date}}</strong>
+                -
+              </span>
               {{qualification.course}} -
               <strong>{{qualification.grade}}</strong>
             </v-list-tile-tile>
@@ -27,9 +29,47 @@
         </v-list-tile>
       </v-list>
     </div>
+    <!-- work history -->
+    <div class="work-history pa-5 white">
+      <h2 class="mb-4">Work History</h2>
+      <p>
+        <strong>{{work[0].company}}</strong>
+        -
+        {{work[0].date}}
+        <br>
+        Responsibilities: {{work[0].duties}}
+      </p>
+      <p>
+        <strong>{{work[1].company}}</strong>
+        -
+        {{work[1].date}}
+        -
+        <strong>{{work[1].role}}</strong>
+        <br>
+        Responsibilities: {{work[1].duties}}
+      </p>
+      <p>
+        <strong>{{work[2].company}}</strong>
+        -
+        {{work[2].date}}
+        -
+        <strong>{{work[2].role}}</strong>
+        <br>
+        Responsibilities: {{work[2].duties}}
+      </p>
+      <p>
+        <strong>{{work[3].company}}</strong>
+        -
+        {{work[3].date}}
+        -
+        <strong>{{work[3].role}}</strong>
+        <br>
+        Responsibilities: {{work[3].duties}}
+      </p>
+    </div>
     <!-- cv and cover letter -->
     <div class="cv pa-5">
-      <h1>CV and Cover Letter</h1>
+      <h2>CV and Cover Letter</h2>
       <h3
         class="grey--text text--darken-2"
       >Please use the links below to download my CV and Cover Letter.</h3>
@@ -75,6 +115,36 @@ export default {
           date: "2006",
           course: "GCSE",
           grade: " 8 A-C Grade GCSEs"
+        }
+      ],
+      work: [
+        {
+          company: "Freelance Audio Engineer/Technical Manager",
+          date: " 2012-2018",
+          role: "",
+          duties:
+            "Working for various event/sound/lighting/video companies as well as multiple venues across London including Conway Hall, Camden Center, LGA, Studio Spaces, Shoreditch Studios, Kachette, LGA, Roca Gallery, Royal Horticultural Halls, and many more. Producing and managing events such as Lewisham Peoples Day 15-17, Alevi 15-17, Glastonbury Shangri-la 13-16, Boomtown Devil Kicks 2013-16."
+        },
+        {
+          company: "PF Events",
+          date: "2014-2018 ",
+          role: "Technical Manager/Events Professional",
+          duties:
+            "Leasing with clients, creating quotes, conducting site visits, writing schedules, booking staff/logistics/external services/sub-hires and producing purchase orders, generating site-plans/acoustic models, overseeing and managing the installation and operation of staging, PA systems, lighting and AV equipment."
+        },
+        {
+          company: "Centre Stage",
+          date: "2013-2014",
+          role: "Sound/Lighting/AV Engineer",
+          duties:
+            "Assisting in the day-to-day activities of a small to medium-size sound and lighting company based in North London. Various roles including preparing equipment for events, installing and operating sound, lighting and AV equipment, working in venues such as the Camden Centre in Kings Cross, mixing bands at live events around London, stage management at community events in Newham."
+        },
+        {
+          company: "Painter Brothers Ltd ",
+          date: "2008-2012",
+          role: "Fabrication/Welding Engineer",
+          duties:
+            "Reading from engineering drawing and producing/fabricating steelwork, largely for electricity transmission towers and substations. Operating various CNC machines, drills, saws, oxy- acetylene cutting equipment, welding equipment, presses. Assembling steel structures at ground level."
         }
       ]
     };
