@@ -75,14 +75,17 @@
       >Please use the links below to download my CV and Cover Letter.</h3>
       <CvButtons/>
     </div>
+
+    <References/>
   </div>
 </template>
 
 <script>
 import CvButtons from "@/components/Cv-buttons";
+import References from "@/components/References";
 
 export default {
-  components: { CvButtons },
+  components: { CvButtons, References },
   data() {
     return {
       education: [
