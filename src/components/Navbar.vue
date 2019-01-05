@@ -5,18 +5,19 @@
       <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="grey--text text--darken-4">
         <span class="text-uppercase font-weight-bold mr-2">Nick Allen</span>
-        <span class="font-weight-light">- Software Portfolio</span>
+        <span class="font-weight-light hidden-sm-and-down">- Software Portfolio</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <div class="social-buttons hidden-sm-and-down">
-        <v-btn small fab class="grey white--text">
+      <!-- social buttons -->
+      <div class="social-buttons">
+        <v-btn small fab class="grey white--text hidden-sm-and-down">
           <v-icon>blur_on</v-icon>
         </v-btn>
-        <v-btn small fab class="grey darken-3 white--text">
+        <v-btn small fab class="grey darken-3 white--text hidden-sm-and-down">
           <v-icon>music_note</v-icon>
         </v-btn>
-        <v-btn small fab class="grey white--text">
+        <v-btn small fab class="grey white--text hidden-sm-and-down">
           <v-icon>filter_vintage</v-icon>
         </v-btn>
         <v-btn small fab class="grey darken-3 white--text">
@@ -26,8 +27,31 @@
     </v-toolbar>
 
     <!-- navigation draw -->
-    <v-navigation-drawer v-model="drawer" app class="blue-grey darken-4 left-nav-drawer">
-      <p>test</p>
+    <v-navigation-drawer v-model="drawer" app class="info left-nav-drawer">
+      <!-- nav items here -->
+      <v-list>
+        <v-list-tile v-for="link in mainLinks" :key="link.text" router :to="link.route">
+          <v-list-tile-action>
+            <v-icon class="white--text">{{link.icon}}</v-icon>
+          </v-list-tile-action>
+          <v-list-title-content>
+            <v-list-tile-tile class="white--text">{{link.text}}</v-list-tile-tile>
+          </v-list-title-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider class="white ma-3"></v-divider>
+      <!-- projects items here -->
+      <v-list>
+        <v-list-tile v-for="link in projectLinks" :key="link.text" router :to="link.route">
+          <v-list-tile-action>
+            <v-icon class="white--text">{{link.icon}}</v-icon>
+          </v-list-tile-action>
+          <v-list-title-content>
+            <v-list-tile-tile class="white--text">{{link.text}}</v-list-tile-tile>
+          </v-list-title-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider class="white ma-3"></v-divider>
     </v-navigation-drawer>
   </nav>
 </template>
@@ -36,7 +60,38 @@
 export default {
   data() {
     return {
-      drawer: false
+      drawer: true,
+      mainLinks: [
+        { icon: "perm_identity", text: "Bio", route: "/bio" },
+        { icon: "file_copy", text: "CV", route: "/cv" }
+      ],
+      projectLinks: [
+        {
+          icon: "graphic_eq",
+          text: "Final Year Project",
+          route: "/fyp"
+        },
+        {
+          icon: "toll",
+          text: "OO Programming",
+          route: "/oo"
+        },
+        {
+          icon: "line_style",
+          text: "Web Development",
+          route: "/webapp"
+        },
+        {
+          icon: "vertical_split",
+          text: "Software Management",
+          route: "/sem"
+        },
+        {
+          icon: "theaters",
+          text: "3D Graphics",
+          route: "/cv"
+        }
+      ]
     };
   }
 };
