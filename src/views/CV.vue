@@ -1,13 +1,16 @@
 <template>
-  <div class="education ma-5">
+  <div class="education">
     <!-- education -->
-    <div class="education_section">
+    <div class="education_section white pa-5">
       <h1>Education</h1>
       <h3
         class="grey--text text--darken-2"
       >I have a mixed education and haved studied a variety of topics, generally focused around engineering industries. Over the years I have obtained a number of qualifications, most notably those listed in the section below.</h3>
-      <h2 class="mt-5">Qualifications</h2>
-      <v-list>
+    </div>
+
+    <div class="pa-5 grey lighten-4">
+      <h2>Qualifications</h2>
+      <v-list class="grey lighten-4">
         <v-list-tile class="my-4" v-for="qualification in education" :key="qualification.text">
           <v-list-tile-action>
             <v-icon>class</v-icon>
@@ -25,21 +28,21 @@
       </v-list>
     </div>
     <!-- cv and cover letter -->
-    <div class="cv mt-5">
+    <div class="cv pa-5">
       <h1>CV and Cover Letter</h1>
       <h3
         class="grey--text text--darken-2"
       >Please use the links below to download my CV and Cover Letter.</h3>
-      <div class="cv-buttons mt-3">
-        <v-btn flat depressed large class="info">CV</v-btn>
-        <v-btn flat depressed large class="secondary">Cover Letter</v-btn>
-      </div>
+      <CvButtons/>
     </div>
   </div>
 </template>
 
 <script>
+import CvButtons from "@/components/Cv-buttons";
+
 export default {
+  components: { CvButtons },
   data() {
     return {
       education: [
