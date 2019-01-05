@@ -1,7 +1,7 @@
 <template>
   <nav class="custom-navbar">
     <!-- flat removes drop shadow and makes opaque -->
-    <v-toolbar height="100" flat app>
+    <v-toolbar height="90" app>
       <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="grey--text text--darken-4">
         <span class="text-uppercase font-weight-bold mr-2">Nick Allen</span>
@@ -89,7 +89,7 @@ export default {
         {
           icon: "theaters",
           text: "3D Graphics",
-          route: "/cv"
+          route: "/3dgraphics"
         }
       ]
     };
