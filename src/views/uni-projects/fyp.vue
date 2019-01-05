@@ -17,10 +17,10 @@
     <div class="flex pa-5 white">
       <h2>Images</h2>
       <p class="mb-4">Below are a number of images of the final application.</p>
-      <div class="font-weight-bold">
+      <!-- show large images here -->
+      <div class="font-weight-bold hidden-sm-and-down">
         <p>Overview of the final UI</p>
-        <img src="@/assets/project-images/fpy/fyp_job.png" width="800">
-
+        <img class="hidden-sm-and-down" src="@/assets/project-images/fpy/fyp_job.png" width="800">
         <p class="mt-5">Accounts Section</p>
         <img src="@/assets/project-images/fpy/fyp_accounts.png" width="800">
 
@@ -32,6 +32,22 @@
 
         <p class="mt-5">Adding a new resource to the system</p>
         <img src="@/assets/project-images/fpy/fyp_resource.png" width="800">
+      </div>
+      <!-- show small images here -->
+      <div class="font-weight-bold hidden-md-and-up">
+        <p>Overview of the final UI</p>
+        <img src="@/assets/project-images/fpy/fyp_job.png" width="300">
+        <p class="mt-5">Accounts Section</p>
+        <img src="@/assets/project-images/fpy/fyp_accounts.png" width="300">
+
+        <p class="mt-5">Adding a new job to the system</p>
+        <img src="@/assets/project-images/fpy/fyp_addjob.png" width="300">
+
+        <p class="mt-5">Overview of employees section</p>
+        <img src="@/assets/project-images/fpy/fyp_employees.png" width="300">
+
+        <p class="mt-5">Adding a new resource to the system</p>
+        <img src="@/assets/project-images/fpy/fyp_resource.png" width="300">
       </div>
     </div>
   </div>
