@@ -6,6 +6,7 @@
       <h3>Here you will find information about myself and several software projects completed at university.</h3>
       <!-- The projects consist of a wide range of technologies and are listed in the menu to the left. If this menu is not visible, please hit the symbol in the top left corner. -->
     </div>
+    <hr class="mt-4">
 
     <!-- about me -->
     <div class="about-me mt-5">

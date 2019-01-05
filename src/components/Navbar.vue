@@ -63,7 +63,7 @@ export default {
       drawer: true,
       mainLinks: [
         { icon: "perm_identity", text: "Profile", route: "/" },
-        { icon: "file_copy", text: "CV", route: "/cv" }
+        { icon: "file_copy", text: "Education & CV", route: "/cv" }
       ],
       projectLinks: [
         {
