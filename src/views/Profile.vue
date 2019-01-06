@@ -22,7 +22,7 @@
     </div>
 
     <!-- key skills -->
-    <div class="key-skills white pa-5 hidden-xs-only">
+    <div class="key-skills white pa-5">
       <h2>Key Skills</h2>
       <v-list>
         <v-list-tile class="my-3" v-for="skill in keyskills" :key="skill.text">
