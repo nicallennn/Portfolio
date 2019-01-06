@@ -75,8 +75,6 @@
       >Please use the links below to download my CV and Cover Letter.</h3>
       <CvButtons/>
     </div>
-
-    <References/>
   </div>
 </template>
 
