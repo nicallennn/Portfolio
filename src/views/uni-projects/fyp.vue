@@ -32,6 +32,30 @@
 
         <p class="mt-5">Adding a new resource to the system</p>
         <img src="@/assets/project-images/fpy/fyp_resource.png" width="800">
+
+        <p class="mt-5">Solidity Smart Contract</p>
+        <img src="@/assets/project-images/fpy/contract.png" width="800">
+
+        <p class="mt-5">Smart Contract Functions - Adding Jobs</p>
+        <img src="@/assets/project-images/fpy/contract_functions.png" width="800">
+
+        <p class="mt-5">Smart Contract Functions - Paying Jobs</p>
+        <img src="@/assets/project-images/fpy/contract_functions_2.png" width="800">
+
+        <p class="mt-5">Unit Test Code - Using Mocha JS</p>
+        <img src="@/assets/project-images/fpy/fyp_testing.png" width="800">
+
+        <p class="mt-5">JS Functions</p>
+        <img src="@/assets/project-images/fpy/js_functions.png" width="800">
+
+        <p class="mt-5">JS Functions - Adding a job from frontend</p>
+        <img src="@/assets/project-images/fpy/js_add_job.png" width="800">
+
+        <p class="mt-5">JS Functions - Paying a job from frontend</p>
+        <img src="@/assets/project-images/fpy/js_payjob.png" width="800">
+
+        <p class="mt-5">JS Functions - Reload jobs on frontend</p>
+        <img src="@/assets/project-images/fpy/js_reload_jobs.png" width="800">
       </div>
       <!-- show small images here -->
       <div class="font-weight-bold hidden-md-and-up">
@@ -48,6 +72,30 @@
 
         <p class="mt-5">Adding a new resource to the system</p>
         <img src="@/assets/project-images/fpy/fyp_resource.png" width="300">
+
+        <p class="mt-5">Solidity Smart Contract</p>
+        <img src="@/assets/project-images/fpy/contract.png" width="300">
+
+        <p class="mt-5">Smart Contract Functions - Adding Jobs</p>
+        <img src="@/assets/project-images/fpy/contract_functions.png" width="300">
+
+        <p class="mt-5">Smart Contract Functions - Paying Jobs</p>
+        <img src="@/assets/project-images/fpy/contract_functions_2.png" width="300">
+
+        <p class="mt-5">Unit Test Code - Using Mocha JS</p>
+        <img src="@/assets/project-images/fpy/fyp_testing.png" width="300">
+
+        <p class="mt-5">JS Functions</p>
+        <img src="@/assets/project-images/fpy/js_functions.png" width="300">
+
+        <p class="mt-5">JS Functions - Adding a job from frontend</p>
+        <img src="@/assets/project-images/fpy/js_add_job.png" width="300">
+
+        <p class="mt-5">JS Functions - Paying a job from frontend</p>
+        <img src="@/assets/project-images/fpy/js_payjob.png" width="300">
+
+        <p class="mt-5">JS Functions - Reload jobs on frontend</p>
+        <img src="@/assets/project-images/fpy/js_reload_jobs.png" width="300">
       </div>
     </div>
   </div>

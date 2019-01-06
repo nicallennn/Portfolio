@@ -2,7 +2,7 @@
   <div class="profile">
     <!-- automate this text on screen -->
     <div class="pa-5 white">
-      <h1>Welcome to my online portfolio.</h1>
+      <h1>{{title}}</h1>
       <h3
         class="grey--text text--darken-2"
       >Here you will find information about myself and several software projects completed at university.</h3>
@@ -25,13 +25,13 @@
     <div class="key-skills white pa-5 hidden-xs-only">
       <h2>Key Skills</h2>
       <v-list>
-        <v-list-tile class="my-4" v-for="skill in keyskills" :key="skill.text">
+        <v-list-tile class="my-3" v-for="skill in keyskills" :key="skill.text">
           <v-list-tile-action>
             <v-icon>vpn_key</v-icon>
           </v-list-tile-action>
-          <v-list-title-content>
-            <v-list-tile-tile>{{skill.text}}</v-list-tile-tile>
-          </v-list-title-content>
+          <v-list-tile-content>
+            <v-list-tile-title>{{skill.text}}</v-list-tile-title>
+          </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </div>
@@ -62,17 +62,10 @@
 </template>
 
 <script>
-import CvButtons from "@/components/Cv-buttons";
-
 export default {
-  components: { CvButtons },
-  methods: {
-    openZinc: () => {
-      window.open("http://zinc.work/user/nicallennn", "_blank");
-    }
-  },
   data() {
     return {
+      title: "Welcome to my online portfolio.",
       keyskills: [
         {
           text:
@@ -97,6 +90,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    openZinc: () => {
+      window.open("http://zinc.work/user/nicallennn", "_blank");
+    }
   }
 };
 </script>

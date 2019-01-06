@@ -11,7 +11,7 @@
     <div class="pa-5 grey lighten-4">
       <h2>Qualifications</h2>
       <v-list class="grey lighten-4">
-        <v-list-tile class="my-4" v-for="qualification in education" :key="qualification.text">
+        <v-list-tile class="my-3" v-for="qualification in education" :key="qualification.text">
           <v-list-tile-action>
             <v-icon>class</v-icon>
           </v-list-tile-action>
