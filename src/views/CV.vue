@@ -80,10 +80,9 @@
 
 <script>
 import CvButtons from "@/components/Cv-buttons";
-import References from "@/components/References";
 
 export default {
-  components: { CvButtons, References },
+  components: { CvButtons },
   data() {
     return {
       education: [
