@@ -67,22 +67,33 @@
         Responsibilities: {{work[3].duties}}
       </p>
     </div>
+
+    <!-- hobbies -->
+    <div class="hobbies pa-5">
+      <h2>Hobbies</h2>
+      <p>I enjoy a number of different hobbies, top of which is music production. I have been producing ambient flavours of electronic music since my late teens and have a lot of interest in analogue synthesisers, and a lot of love for the Ableton Live software. I have more recently been gaining interest in the realms of video and have been producing animated visuals using Resolume.</p>
+
+      <p>When not playing around with audio and video, I do a lot of hobby programming and self-studying, mostly via Udemy’s online courses. Of late most of my time has been spent learning various JS frameworks as well as experimenting with Artificial Neural Networks and Deep Learning ML techniques.</p>
+    </div>
+
+    <References/>
     <!-- cv and cover letter -->
-    <div class="cv pa-5">
+    <!-- <div class="cv pa-5">
       <h2>CV and Cover Letter</h2>
       <h3
         class="grey--text text--darken-2"
       >Please use the links below to download my CV and Cover Letter.</h3>
       <CvButtons/>
-    </div>
+    </div>-->
   </div>
 </template>
 
 <script>
 import CvButtons from "@/components/Cv-buttons";
+import References from "@/components/References";
 
 export default {
-  components: { CvButtons },
+  components: { CvButtons, References },
   data() {
     return {
       education: [
@@ -144,7 +155,7 @@ export default {
           date: "2008-2012",
           role: "Fabrication/Welding Engineer",
           duties:
-            "Reading from engineering drawing and producing/fabricating steelwork, largely for electricity transmission towers and substations. Operating various CNC machines, drills, saws, oxy- acetylene cutting equipment, welding equipment, presses. Assembling steel structures at ground level."
+            "Reading from engineering drawings and producing/fabricating steelwork, largely for electricity transmission towers and substations. Operating various CNC machines, drills, saws, oxy- acetylene cutting equipment, welding equipment, presses. Assembling steel structures at ground level."
         }
       ]
     };

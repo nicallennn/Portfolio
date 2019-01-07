@@ -11,16 +11,15 @@
 
       <!-- social buttons -->
       <div class="social-buttons">
-        <v-btn small fab class="grey white--text hidden-xs-only">
-          <v-icon>blur_on</v-icon>
+        <v-btn @click="openSocial(false)" small fab class="grey darken-3 white--text">
+          <!-- linked-in -->
+          <i class="fab fa-linkedin-in" style="font-size:16px"></i>
         </v-btn>
-        <v-btn small fab class="grey darken-3 white--text hidden-xs-only">
-          <v-icon>music_note</v-icon>
+        <v-btn @click="openSocial(true)" small fab class="grey white--text">
+          <!-- github -->
+          <i class="fab fa-github" style="font-size:20px"></i>
         </v-btn>
-        <v-btn small fab class="grey white--text">
-          <v-icon>filter_vintage</v-icon>
-        </v-btn>
-        <v-btn small fab class="grey darken-3 white--text">
+        <v-btn href="mailto:nicallennn@gmail.com" small fab class="grey darken-3 white--text">
           <v-icon>email</v-icon>
         </v-btn>
       </div>
@@ -58,11 +57,20 @@
 
 <script>
 export default {
+  methods: {
+    openSocial: git => {
+      if (git) {
+        window.open("https://github.com/nicallennn", "_blank");
+      } else {
+        window.open("https://www.linkedin.com/in/nicallennn", "_blank");
+      }
+    }
+  },
   data() {
     return {
       drawer: true,
       mainLinks: [
-        { icon: "perm_identity", text: "Profile", route: "/" },
+        { icon: "perm_identity", text: "Home", route: "/" },
         { icon: "file_copy", text: "Education & Work", route: "/cv" }
       ],
       projectLinks: [

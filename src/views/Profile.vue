@@ -36,27 +36,12 @@
       </v-list>
     </div>
 
-    <!-- hobbies -->
-    <div class="hobbies pa-5">
-      <h2>Hobbies</h2>
-      <p>I enjoy a number of different hobbies, top of which is music production. I have been producing ambient flavours of electronic music since my late teens and have a lot of interest in analogue synthesisers, and a lot of love for the Ableton Live software. I have more recently been gaining interest in the realms of video and have been producing animated visuals using Resolume.</p>
-
-      <p>When not playing around with audio and video, I do a lot of hobby programming and self-studying, mostly via Udemy’s online courses. Of late most of my time has been spent learning various JS frameworks as well as experimenting with Artificial Neural Networks and Deep Learning ML techniques.</p>
-    </div>
-
-    <!-- references -->
-    <div class="references white pa-5">
-      <h2>References</h2>
-
-      <p>I am able to provide both work and acedemic references. I also have public references on my Zinc profile, a cryptographically proofed referencing system.</p>
-
-      <v-btn @click="openZinc" small class="mx-0 secondary">View Zinc Profile</v-btn>
-    </div>
-
     <!-- what next -->
     <div class="hobbies pa-5">
       <h2>What next?</h2>
-      <p>Education/Work history, and several projects can be viewed via the menu to the left. You can contact me via the email link (top right), or via the contact details listed in the CV section.</p>
+      <p>Check out my education and work history, accessible via the buttons below or the navigation menu to the left. If you have come to my site via a link on my CV and are just here to look at some of my past projects, select a project from the side menu or click the projects button below.</p>
+      <v-btn to="/cv" small class="ml-0 info">Education &amp; Work</v-btn>
+      <v-btn to="/fyp" small class="secondary">Projects</v-btn>
     </div>
   </div>
 </template>

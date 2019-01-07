@@ -5,7 +5,7 @@
 
     <p>I am able to provide both work and acedemic references. I also have public references on my Zinc profile, a cryptographically proofed referencing system.</p>
 
-    <v-btn @click="openZinc" small class="mx-0 secondary">View Zinc Profile</v-btn>
+    <v-btn @click="openZinc" small class="mx-0 info">View Zinc Profile</v-btn>
   </div>
 </template>
 
