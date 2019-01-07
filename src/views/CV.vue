@@ -78,22 +78,21 @@
 
     <References/>
     <!-- cv and cover letter -->
-    <!-- <div class="cv pa-5">
+    <div class="cv pa-5">
       <h2>CV and Cover Letter</h2>
       <h3
         class="grey--text text--darken-2"
       >Please use the links below to download my CV and Cover Letter.</h3>
       <CvButtons/>
-    </div>-->
+    </div>
   </div>
 </template>
 
 <script>
-import CvButtons from "@/components/Cv-buttons";
 import References from "@/components/References";
 
 export default {
-  components: { CvButtons, References },
+  components: { References },
   data() {
     return {
       education: [

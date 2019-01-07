@@ -46,7 +46,7 @@
         <img src="@/assets/project-images/fpy/js_functions.png" width="300">
       </div>
     </div>
-    <!-- cv and cover letter -->
+    <!-- What next? -->
     <div class="cv pa-5">
       <h2>What next?</h2>
       <h3
