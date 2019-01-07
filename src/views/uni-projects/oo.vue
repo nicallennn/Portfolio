@@ -17,7 +17,7 @@
 
     <div class="flex pa-5 white">
       <h2>Images</h2>
-      <p class="mb-4">Below are a number of images of the final application.</p>
+      <p class="mb-4">Below are a few images of the final application.</p>
       <!-- show large images here -->
       <div class="font-weight-bold hidden-sm-and-down">
         <p>Login UI</p>
