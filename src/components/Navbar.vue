@@ -15,7 +15,7 @@
           <!-- linked-in -->
           <i class="fab fa-linkedin-in" style="font-size:16px"></i>
         </v-btn>
-        <v-btn @click="openSocial(true)" small fab class="grey white--text">
+        <v-btn @click="openSocial(true)" small fab class="grey white--text hidden-xs-only">
           <!-- github -->
           <i class="fab fa-github" style="font-size:20px"></i>
         </v-btn>
